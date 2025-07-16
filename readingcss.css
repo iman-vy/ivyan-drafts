@@ -1,0 +1,387 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  background-color: #FFEEEE;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #8C756F;
+  height: 48px;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #FFE9EA;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #5A3B2E;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+	position: relative; /* enables top/left/right/bottom positioning */
+}
+
+.about-link {
+  top: 5px;
+  left: 50px;
+}
+
+.home-link {
+  top: 5px;
+  left: 20px;
+}
+
+/* Logo image in center */
+.nav-logo {
+  width: 80px; /* Adjust based on your logo size */
+  height: auto;
+  display: block;
+  margin: 0 10px;
+	position: relative;
+	left: 20px;
+}
+
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button style (matches nav links) */
+.dropbtn {
+  background-color: #FFE9EA;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #5A3B2E;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFEEEE;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+  color: #5A3B2E;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3dede;
+}
+
+.heading-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* adjust based on your layout */
+}
+
+.comfort {
+  position: absolute;
+  top: 50px;
+  left: 127px;
+  font-family: 'Times New Roman', serif;
+  font-size: 64px;
+  color: #705434;
+}
+
+.works {
+  position: absolute;
+  top: 95px;
+  left: 280px;
+  font-family: 'Times New Roman', serif;
+  font-size: 64px;
+  color: #705434;
+}
+
+
+.carousel-container {
+  position: relative;
+	top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+	
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  background-color: #f9dcdc;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 360px;
+  height: 528px;
+}
+
+.center-img {
+  width: 249.98px;
+  height: 332px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.side1 {
+  width: 316px;
+  height: 463px;
+	position: relative;
+	top:25px;
+	opacity: 0.6;
+}
+
+.side2 {
+  width: 316px;
+  height: 463px;
+	position: relative;
+	top:25px;
+	opacity: 0.6;
+}
+
+
+.side-img {
+  width: 203px;
+  height: 294px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.nav-button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f2caca;
+  font-size: 18px;
+  cursor: pointer;
+	position: relative;
+	top: 10px;
+}
+
+.left { position: relative; left: -10px;}
+.right { position: relative; left: 10px;}
+
+
+/*sypnosis*/
+
+.maeum-container {
+  width: 1098px;
+  height: 528px; /* SAME AS CENTER BOX */
+  border: 2px solid black;
+  display: flex;
+  background-color: #fde9e9;
+  font-family: 'Times New Roman', serif;
+  margin: 100px auto 0 auto;
+}
+
+.image-box {
+  width: 326px;
+  height: 526px; /* match carousel */
+  border-right: 2px solid black;
+}
+
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Middle strip */
+.vertical-strip {
+  width: 60px; /* width of the link/synopsis column */
+    height: 526px; /* match carousel */
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.vertical-strip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: #705434;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	position: relative;
+	bottom: 100px;
+}
+
+
+
+/* Right content */
+.content-box {
+  flex: 1;
+  text-align: center;
+  padding: 40px 30px 0 30px; /* add side padding */
+  color: #705434;
+	  overflow-y: auto;
+  max-height: 528px;
+}
+.content-box h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content-box p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+#contact {
+  background-color: #8C756F;
+  color: white;
+  width: 100%;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+	position: relative;
+	top:200px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  max-width: 500px;
+	position: relative;
+	left: 150px;
+}
+
+.footer-left strong {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+	position: relative;
+	right:150px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  width: 80%;
+  margin: 0 auto 10px;
+  border: 0.5px solid #ffffff80;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #FFE9EA;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

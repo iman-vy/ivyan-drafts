@@ -1,0 +1,296 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  background-color: #FFEEEE;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #8C756F;
+  height: 48px;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #FFE9EA;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #5A3B2E;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+	position: relative; /* enables top/left/right/bottom positioning */
+}
+
+.about-link {
+  top: 5px;
+  left: 50px;
+}
+
+.home-link {
+  top: 5px;
+  left: 20px;
+}
+
+/* Logo image in center */
+.nav-logo {
+  width: 80px; /* Adjust based on your logo size */
+  height: auto;
+  display: block;
+  margin: 0 10px;
+	position: relative;
+	left: 20px;
+}
+
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button style (matches nav links) */
+.dropbtn {
+  background-color: #FFE9EA;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #5A3B2E;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFEEEE;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+  color: #5A3B2E;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3dede;
+}
+
+/* Banner */
+.banner-wrapper {
+  position: relative;
+}
+
+/* Banner Area */
+.banner {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.top-recommendation {font-family: "Times New Roman", "serif"; font-style: italic; text-align: justify; position: relative; top:100px; color: #1F1603; }
+
+
+/* Floating Profile Image */
+.profile-pic-floating {
+  position: absolute;
+  bottom: 15px;
+  left: 100px; /* Adjust horizontally */
+  width: 309px;
+  height: 395.19px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid black;
+  z-index: 10;
+}
+
+
+.book-carousel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeeee;
+  min-height: 90vh; /* Almost full screen */
+  padding: 40px 80px;
+  gap: 60px;
+}
+
+.book-main img {
+  width: 360px; /* larger book cover */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.book-info-card {
+  background-color: #b99999;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  font-size: 18px;
+}
+
+.book-info-card h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: #8c756f;
+  cursor: pointer;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  color: #5a3b2e;
+  transform: scale(1.1);
+}
+
+
+
+#contact {
+  background-color: #8C756F;
+  color: white;
+  width: 100%;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  max-width: 500px;
+	position: relative;
+	left: 150px;
+}
+
+.footer-left strong {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+	position: relative;
+	right:150px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  width: 80%;
+  margin: 0 auto 10px;
+  border: 0.5px solid #ffffff80;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #FFE9EA;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+

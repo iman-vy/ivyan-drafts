@@ -1,0 +1,538 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  background-color: #FFEEEE;
+  margin: 10;
+  padding: 0;
+	height: 3600px;
+}
+
+
+/* Top Bar */
+.top-bar {
+  background-color: #8C756F;
+  height: 48px;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #FFE9EA;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #5A3B2E;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+	position: relative; /* enables top/left/right/bottom positioning */
+}
+
+.about-link {
+  top: 5px;
+  left: 50px;
+}
+
+.home-link {
+  top: 5px;
+  left: 20px;
+}
+
+/* Logo image in center */
+.nav-logo {
+  width: 80px; /* Adjust based on your logo size */
+  height: auto;
+  display: block;
+  margin: 0 10px;
+	position: relative;
+	left: 20px;
+}
+
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button style (matches nav links) */
+.dropbtn {
+  background-color: #FFE9EA;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #5A3B2E;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFEEEE;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+  color: #5A3B2E;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3dede;
+}
+
+/* Main Content */
+.main-content {
+  width: 100%;
+  height: 3400px;
+  background-color: #FFFFFF; /* Optional: to match your mockup */
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+.education-box {
+  width: 833px;
+  height: 434px;
+  border: 2px solid black;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+	position: relative;
+	top: 50px;
+	right: 82px;/* Optional */
+}
+
+.uitm-logo {
+  width: 190px; /* Adjust as needed */
+  height: 229px;
+	position: relative;
+	right: 250px;
+	top: 70px;
+}
+
+.education-text h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+	position: relative;
+	left: 100px;
+	bottom: 130px;
+}
+
+.education-text h3c {
+  font-size: 48px;
+  font-weight: NONE;
+	font-family:  "Times New Roman", "serif";
+  line-height: 0.6;
+	position: relative;
+	left: 800px;
+	bottom: 130px;
+	text-align: center;
+}
+
+.education-text p {
+  text-align: center;
+  font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+	position: relative;
+	left: 100px;
+	bottom: 180px;
+}
+
+
+.activities-box {
+  width: 1364px;
+  height: 699px;
+  background-color: #FCE1E1;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  bottom: 3000px;
+  left: 0px; /* remove shift */
+  margin: 0 auto; /* center the full-width box */
+}
+
+.section-title {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 64px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 0.7;
+	position: relative;
+	right: -70px;
+	bottom: -00px;
+}
+
+.activities-img {
+  position: relative;
+  border-radius: none;
+  object-fit: cover;
+}
+
+/* Example: move images manually */
+.img1 { top: -180px; left: 10px; height: 264px; width: 228px; }
+.img2 { top: 20px; left: -220px; height: 158px; width: 228px; }
+.img3 { top: 20px; left: -180px; height: 462px; width: 399px; }
+.img4 { top: -630px; left: 720px; height: 259px; width: 516px; }
+.img5 { top: -290px; left: 200px; height: 306px; width: 516px; }
+
+.activities-caption {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+	position: relative;
+	bottom: 305px;
+	left: 10px;
+}
+
+.education2-box {
+ width: 833px;
+  height: 434px;
+  border: 2px solid black;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+	position: relative;
+	top: -2820px;
+	left: 688px;/* Optional */
+}
+
+.smkdl-logo {
+  width: 223.21px; /* Adjust as needed */
+  height: 219px;
+	position: relative;
+	right: -220px;
+	top: 70px;
+}
+
+.education2-text h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+	position: relative;
+	left: -150px;
+	bottom: 130px;
+}
+
+.education2-text p {
+  text-align: center;
+  font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+	position: relative;
+	left: -150px;
+	bottom: 120px;
+}
+
+/*journey*/
+.journey-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff; /* Optional */
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+	position: relative;
+	top: -1820px;
+	width: 600px;
+	height: 186px;
+}
+
+.journey-text {
+  flex: 1;
+  width: 500px;
+}
+
+.journey-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #5A3B1F; /* A rich brown tone like your design */
+	position: relative;
+  top: -200px;
+	right: 100px;
+}
+
+.journey-section p1 {
+  font-size: 20px;
+  line-height: 1.7;
+	text-align: justify;
+  color: #222;
+	position: relative;
+	bottom: 210px;
+	left: 10px;
+	width: 600px;
+}
+
+.journey-section p {
+  font-size: 20px;
+  line-height: 1.7;
+	text-align: justify;
+  color: #222;
+	position: relative;
+	bottom: 240px;
+	left: 10px;
+	width: 500px;
+}
+
+
+/*smkdl*/
+.activities2-box {
+  width: 1326px;
+  height: 699px;
+  background-color: #FCE1E1; /* soft pink */
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+	position: relative;
+	bottom: 2645px;
+	right: 0px;
+	 left: 0px; /* remove shift */
+  margin: 0 auto; /* center the full-width box */
+}
+
+.section2-title {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 64px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 0.7;
+	position: relative;
+	right: -630px;
+	bottom: -00px;
+}
+
+.activities2-img {
+  position: relative;
+  border-radius: none;
+  object-fit: cover;
+}
+
+/* Example: move images manually */
+.img9 { top: -480px; left: 600px; height: 264px; width: 228px; }
+.img10 { top: -280px; left: 370px; height: 158px; width: 228px; }
+.img8 { top: -280px; left: 560px; height: 462px; width: 399px; }
+.img7 { bottom: -180px; left: -520px; height: 259px; width: 516px; }
+.img6 { top: -120px; left: 00px; height: 306px; width: 516px; }
+
+/*achievements*/
+.achievements-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff; /* Optional */
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+	position: relative;
+	top: -2600px;
+}
+
+.achievements-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.achievements-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #5A3B1F; /* A rich brown tone like your design */
+	position: relative;
+  bottom: -30px;
+	left: -10px;
+}
+
+.achievements-text p {
+  font-size: 20px;
+  line-height: 1.7;
+	text-align: justify;
+  color: #222;
+	position: relative;
+	bottom: -50px;
+	left: -20px;
+}
+
+.achievements-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.achievements-images img {
+  width: 237px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+
+/* Footer */
+.footer {
+  background-color: #8C756F;
+  height: 246px;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+	position: relative;
+	top: 0px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact img {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+hr {
+  margin: 20px auto;
+  width: 80%;
+  border: 0.5px solid #ccc;
+}
+
+#contact {
+  background-color: #8C756F;
+  color: white;
+  width: 100%;
+  padding: 60px 20px 30px;
+  font-family: 'Georgia', serif;
+	position: relative;
+	bottom: 2500px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left strong {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+	position: relative;
+	left: 150px;
+}
+
+.footer-left p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+		position: relative;
+	left: 150px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+	position: relative;
+	right: 70px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  width: 80%;
+  margin: 0 auto 10px;
+  border: 0.5px solid #ffffff80;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #FFE9EA;
+  margin: 0;
+}
